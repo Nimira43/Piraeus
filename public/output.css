@@ -509,33 +509,26 @@ video {
   display: none;
 }
 
-@media (prefers-color-scheme: dark){
-
-  body{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-}
-
-a{
-  border-radius: 0.25rem;
-}
-
-@media (prefers-color-scheme: dark){
-
-  a{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-}
-
-img{
-  height: 100%;
-  border-radius: 0.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 * {
   font-family: 'League Spartan', sans-serif;
 }
+
+/* @layer base {
+  body {
+    @apply dark:text-white;
+  }
+
+  a {
+    @apply dark:text-white rounded;
+  }
+
+  img {
+    @apply rounded h-full object-cover;
+  }
+}
+
+@layer components {
+  .component {
+    @apply flex flex-col gap-y-12 px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl 2xl:my-8 2xl:border 2xl:border-blue;
+  }
+} */
