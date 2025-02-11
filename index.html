@@ -10,6 +10,9 @@
   <script>
     // Client Sicket
     const socket = io()
+    socket.on('connect', () => {
+      console.log(`A new user connected with ${socket.id}`)
+    })
   </script>
 </body>
 </html>
