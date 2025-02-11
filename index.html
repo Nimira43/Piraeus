@@ -9,6 +9,7 @@
   <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
   <script>
     // Client Socket
+    console.log('CLIENT-SIDE')
     const socket = io()
     socket.on('connect', () => {
       console.log(`A new user connected with ${socket.id}`)
