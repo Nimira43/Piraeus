@@ -1,20 +1,11 @@
 {
-  "name": "project",
+  "name": "piraeus",
   "version": "1.0.0",
+  "description": "Socket IO application handling Stock Market information",
   "main": "index.js",
   "scripts": {
-    "build": "postcss styles.css -o public/output.css",
-    "compile": "postcss styles.css -o public/output.css",
-    "watch": "postcss styles.css -o public/output.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.14"
-  }
+  "author": "Nick Rabone",
+  "license": "ISC"
 }
