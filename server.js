@@ -9,12 +9,12 @@ const io = new Server(server)
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('index.html')
+  res.sendFile(__dirname + '/index.html')
 })
 
 // Server Instance and Server Socket
 io.on('connection', socket => {
-  console.log(`A new user connected  with ID: ${socket.id}`)
+  console.log(`A new user connected with ID: ${socket.id}`)
 })
 
 server.listen(port, () => {
