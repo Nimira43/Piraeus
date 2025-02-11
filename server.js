@@ -9,13 +9,11 @@ const io = new Server(server)
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send(`
-    <div>
-      <h1>Piraeus</h1>
-      <hr />
-      <h4>Live Stock Market Prices and News</h4>
-    </div>
-  `)
+  res.send('index.html')
+})
+
+io.on('connection', socket => {
+  console.log(`A new user connected  with ID: ${socket.id}`)
 })
 
 server.listen(port, () => {
