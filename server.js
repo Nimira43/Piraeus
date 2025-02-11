@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
   res.send('index.html')
 })
 
+// Server Instance and Server Socket
 io.on('connection', socket => {
   console.log(`A new user connected  with ID: ${socket.id}`)
 })
