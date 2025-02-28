@@ -1,0 +1,14 @@
+# Node modules
+3000/node_modules
+8000/node_modules
+
+# Dist folders
+3000/.dist
+8000/.dist
+
+# General ignores
+node_modules
+dist
+.DS_Store
+.env
+*.log
