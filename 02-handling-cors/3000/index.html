@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CORS Demo</title>
+  <title>Piraeus: CORS Demo</title>
 </head>
 <body>
+  <h1>Piraeus</h1>
   <script>
     fetch('http://localhost:8000')
       .then(res => res.text())
       .then(data => console.log(data))
       .catch(err => console.error(err)) 
-    console.log('Cors setup')
+    console.log('Cors Accepted')
   </script>
 </body>
 </html>
