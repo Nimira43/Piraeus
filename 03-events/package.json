@@ -1,0 +1,16 @@
+{
+  "name": "piraeus",
+  "version": "1.0.0",
+  "description": "Socket IO application handling Stock Market information",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Nick Rabone",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1"
+  }
+}
