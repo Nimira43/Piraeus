@@ -12,8 +12,12 @@ app.get('/', (req, res) => {
 
 console.log('SERVER-SIDE')
 // Server Instance and Server Socket
-io.on('connection', socket => {
-  
+
+io.on('connection', (socket) => {  
+  socket.on('Message from Server',
+  (message) => {
+    console.log(message)
+  })
   console.log(`A new user connected with ID: ${socket.id}`)
 })
 
