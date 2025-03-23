@@ -11,10 +11,10 @@
   <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
   <script>
     // Client Socket
-    console.log('CLIENT-SIDE')
+    console.log('CLIENT-SIDE - DEBUGGING: ')
     const socket = io()
     socket.on('connect', () => {
-      console.log(`A new user connected with ${socket.id}`)
+      socket.emit('message', 'Hello Server, Client is Connected.')
     })
   </script>
 </body>

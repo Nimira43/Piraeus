@@ -14,11 +14,10 @@ console.log('SERVER-SIDE')
 // Server Instance and Server Socket
 
 io.on('connection', (socket) => {  
-  socket.on('Message from Server',
-  (message) => {
-    console.log(message)
+  socket.on('message',
+  (msg) => {
+    console.log(msg)
   })
-  console.log(`A new user connected with ID: ${socket.id}`)
 })
 
 server.listen(port, () => {
