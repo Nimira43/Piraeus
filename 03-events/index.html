@@ -14,7 +14,8 @@
     console.log('CLIENT-SIDE - DEBUGGING: ')
     const socket = io()
     socket.on('connect', () => {
-      socket.emit('message', 'Hello Server, Client is Connected.')
+      socket.emit('message', 'Hello Server, I am the Client. I am connected.')
+      socket.on('message', msg => console.log(msg))
     })
   </script>
 </body>
