@@ -1,0 +1,21 @@
+{
+  "name": "symposia",
+  "version": "1.0.0",
+  "description": "Hang out application. Part of the Piraeus Socket IO project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hang",
+    "out",
+    "social",
+    "chat",
+    "friends",
+    "group",
+    "meet",
+    "up"
+  ],
+  "author": "Nick Rabone",
+  "license": "ISC"
+}
