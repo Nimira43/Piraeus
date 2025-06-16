@@ -55,6 +55,7 @@ body {
 #group-message-form button {
   background: var(--dark);
   color: var(--light);
+  font-weight: 400;
   text-transform: uppercase;
   border: 0.25rem;
   border-radius: 0.25rem;
