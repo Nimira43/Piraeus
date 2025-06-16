@@ -3,8 +3,32 @@
 * {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --dark: #111;
+  --light: #fffcfa;
+  --main: #ff4500;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 .logo {
   font-family: 'Edu VIC WA NT Beginner', sans-serif;
+}
+
+
+
+#group-message-form {
+  background:
 }
