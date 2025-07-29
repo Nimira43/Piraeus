@@ -10,6 +10,10 @@ app.use(express.static('client'))
 
 io.on('connection', socket => {
   console.log(`A user connected with ID: ${socket.id}`)
+
+  socket.on('disconnect', () => {
+    console.log(`User with ID ${socket.id} disconnected.`)
+  })
 })
 
 server.listen(port, () => {
